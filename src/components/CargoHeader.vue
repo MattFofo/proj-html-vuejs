@@ -2,47 +2,47 @@
   <!--
 header diviso in due parti: -top con i contatti e orari di apertura e navbar con bg trasparente
 -->
-<header>
-  <div class="header_top">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-            <div class="open_hours">open hours</div>
-        </div>
-        <div class="col-6">
-          <div class="contacts">telefono email socials</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="header_bot d-flex align-items-center">
-    <div class="container">
-      <div class="row">
-        <!-- logo -->
-        <div class="col-4">
-          <img src="../assets/img/logo-5.png" alt="">
-        </div>
-        <div class="col-8">
-          <!-- navbar -->
-          <nav class="d-flex justify-content-end align-items-center h-100">
-            <ul class="d-flex">
-              <!-- link creati dinamicamente -->
-              <li v-for="link in arrLinksNav" :key="link.id + link.text"
-              class="pe-2">
-                <a class="" href="">{{ link.text }}</a>
-              </li>
-              <!-- link profile -->
-              <li class="">
-                <a class="" href="">Profile</a>
-              </li>
-            </ul>
-            <button class="btn btn-primary ms-2">GET IN TOUCH</button>
-          </nav>
+  <header class="position-relative">
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+              <div class="open_hours">open hours</div>
+          </div>
+          <div class="col-6">
+            <div class="contacts">telefono email socials</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+    <div class="header_bot d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <!-- logo -->
+          <div class="col-3">
+            <img src="../assets/img/logo-5.png" alt="">
+          </div>
+          <div class="col-9">
+            <!-- navbar -->
+            <nav class="d-flex justify-content-end align-items-center h-100">
+              <ul class="d-flex align-items-center h-100">
+                <!-- link creati dinamicamente -->
+                <li v-for="link in arrLinksNav" :key="link.id + link.text"
+                class="px-3 h-100">
+                  <a class="d-flex align-items-center h-100" href="">{{ link.text }}</a>
+                </li>
+                <!-- link profile -->
+                <li class="h-100 px-3">
+                  <a class="d-flex align-items-center h-100" href="">Profile</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary ms-3">GET IN TOUCH</button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script>
@@ -87,6 +87,7 @@ export default {
 
 <style scoped lang="scss">
   header {
+    z-index: 100;
     .container {
       width: 1100px;
     }

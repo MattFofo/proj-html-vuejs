@@ -9,12 +9,18 @@ Conterrà anche i dati per creare i due tipi principali di sezioni dinamicamente
     <!-- sezione tipo da definire -->
     <!-- sezione tipo 2 -->
     <!-- sezione tipo 1 -->
+    <SectionTop />
   </main>
 </template>
 
 <script>
+import SectionTop from './SectionTop.vue';
+
 export default {
   name: 'CargoMain',
+  components: {
+    SectionTop,
+  },
 };
 </script>
 
