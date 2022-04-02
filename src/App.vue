@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+  $primary: #16928E;
   @import 'bootstrap';
   @import './assets/styles/style.scss';
   button {

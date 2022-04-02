@@ -78,11 +78,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '../assets/styles/partials/variables.scss';
+
   .col-4.position-absolute {
     top: 0;
     right: 0;
     .truck_img {
-      background-color: aqua;
+      background-color: $primary;
     }
   }
 </style>

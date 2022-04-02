@@ -1,6 +1,13 @@
-<template>
 <!-- card dinamiche per sezione 'main services' 'trusted feedback' e footer  -->
-  <section></section>
+<template>
+  <div class="card">
+    <div>
+      <font-awesome-icon icon="fa-solid fa-truck-ramp-box" />
+    </div>
+    <h4>titolo titolo</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Iure recusandae debitis, laborum accusamus iusto doloremqu</p>
+  </div>
 </template>
 
 <script>
@@ -9,6 +16,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+  .card {
+    height: 300px;
+    background-color: darkgray;
+  }
 
 </style>

@@ -11,6 +11,7 @@ Conterrà anche i dati per creare i due tipi principali di sezioni dinamicamente
     <!-- sezione tipo 1 -->
     <SectionTop />
     <SectionType1 />
+    <SectionType2 />
     <!-- <CargoSectionPrototype v-for="section in arrSections" :key="section.id"
     :sections-data="section"
     /> -->
@@ -20,6 +21,7 @@ Conterrà anche i dati per creare i due tipi principali di sezioni dinamicamente
 <script>
 import SectionTop from './SectionTop.vue';
 import SectionType1 from './SectionType1.vue';
+import SectionType2 from './SectionType2.vue';
 
 // import CargoSectionPrototype from './CargoSectionPrototype.vue';
 
@@ -28,6 +30,7 @@ export default {
   components: {
     SectionTop,
     SectionType1,
+    SectionType2,
     // CargoSectionPrototype,
   },
   data() {
