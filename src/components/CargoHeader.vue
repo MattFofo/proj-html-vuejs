@@ -91,6 +91,9 @@ export default {
 
   header {
     z-index: 100;
+    button {
+      flex-shrink: 0;
+    }
     .header_top {
       background-color: darkgray;
     }

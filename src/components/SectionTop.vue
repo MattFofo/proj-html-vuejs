@@ -1,8 +1,8 @@
-<template>
 <!-- prima sezione subito sotto l'header -->
+<template>
   <section>
     <div class="container">
-      <div class="row">
+      <div class="row align-content-center">
         <div class="col-12">
           <small>pretitolo</small>
           <h1>TITOLO TITOLO</h1>
@@ -37,16 +37,17 @@ export default {
   section {
     color: white;
     position: relative;
-    top: ($height--header) * -1; //sostituire con -altezza header
+    top: ($height--header) * -1;
     left: 0;
     right: 0;
-    height: 850px;
     background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(26, 24, 24, 0.5)),
       url(../assets/img/bg-9.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: darken;
     .row {
-      padding-top: ($height--header) * 2;
+      padding-top: ($height--header);
+      height: 850px;
     }
     h1 {
       width: min-content;

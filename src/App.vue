@@ -24,4 +24,7 @@ export default {
 <style lang="scss">
   @import 'bootstrap';
   @import './assets/styles/style.scss';
+  button {
+    min-width: 130px;
+  }
 </style>
