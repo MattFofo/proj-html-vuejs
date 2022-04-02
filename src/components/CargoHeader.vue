@@ -86,16 +86,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '../assets/styles/partials/variables.scss';
+  @import '../assets/styles/partials/utility.scss';
+
   header {
     z-index: 100;
-    .container {
-      width: 1100px;
-    }
     .header_top {
       background-color: darkgray;
     }
     .header_bot {
-      height: 5rem;
+      height: $height--bot_header;
       ul {
         list-style: none;
         margin: 0;
