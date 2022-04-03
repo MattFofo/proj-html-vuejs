@@ -44,134 +44,16 @@ export default {
   },
   data() {
     return {
-      arrSections: [
-        {
-          id: 1,
-          sectionTop: true,
-          sectionType: 'type1',
-          text: {
-            title: 'Excellence in Transport',
-            pretitle: 'WHO WE ARE',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: '',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-        {
-          id: 2,
-          sectionTop: false,
-          sectionType: 'type2',
-          text: {
-            title: 'Main Services',
-            pretitle: 'ROAD TRANPORT',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: 'bg-white',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-        {
-          id: 3,
-          sectionTop: false,
-          sectionType: 'type1',
-          text: {
-            title: 'Logistic Procedures',
-            pretitle: 'ROAD TRANPORT ',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: 'bg-white',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-        {
-          id: 4,
-          sectionTop: false,
-          sectionType: 'type1',
-          text: {
-            title: 'Logistic Procedures',
-            pretitle: 'ROAD TRANPORT ',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: 'bg-white',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-        {
-          id: 5,
-          sectionTop: false,
-          sectionType: 'type1',
-          text: {
-            title: 'Logistic Procedures',
-            pretitle: 'ROAD TRANPORT ',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: 'bg-white',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-        {
-          id: 6,
-          sectionTop: false,
-          sectionType: 'type1',
-          text: {
-            title: 'Logistic Procedures',
-            pretitle: 'ROAD TRANPORT ',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: 'bg-white',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-        {
-          id: 7,
-          sectionTop: false,
-          sectionType: 'type1',
-          text: {
-            title: 'Logistic Procedures',
-            pretitle: 'ROAD TRANPORT ',
-            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum magni nihil tempore dolorem culpa rem veritatis.',
-          },
-          bg: {
-            bgColor: 'bg-white',
-            bgImage: '',
-          },
-          layout: {
-
-          },
-        },
-      ],
+      sectionType2V1: {
+        title: '',
+        pretitle: '',
+        p: '',
+      },
+      sectionType2V2: {
+        title: '',
+        pretitle: '',
+        p: '',
+      },
     };
   },
 };

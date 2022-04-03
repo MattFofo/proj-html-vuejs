@@ -3,18 +3,18 @@
   <div class="card position-relative">
     <div v-if="CardTypeFromMain == 'type1'"
     class="icon_box">
-      <font-awesome-icon icon="fa-solid fa-truck-ramp-box" />
+      <font-awesome-icon :icon="`fa-solid ${ObjCard.icon}`" />
     </div>
     <div v-else>
-      <img src="../assets/img/logo-1.png" alt="">
+      <img :src="`${ObjCard.icon}`" alt="">
     </div>
     <h4 class="py-3">{{ ObjCard.title }}</h4>
     <p class="">{{ ObjCard.p1 }}</p>
     <p v-show="CardTypeFromMain == 'type2'">{{ ObjCard.p1 }}</p>
     <font-awesome-icon v-if="CardTypeFromMain == 'type1'"
-    icon="fa-solid fa-arrow-right" />
+    :icon="`fa-solid ${ObjCard.iconPositioned}`" />
     <font-awesome-icon v-else
-    icon="fa-solid fa-quote-right" />
+    :icon="`fa-solid ${ObjCard.iconPositioned}`" />
   </div>
 </template>
 
@@ -38,7 +38,7 @@ export default {
       padding: 0.3em;
       border-radius: 50%;
       height: fit-content;
-      .fa-truck-ramp-box {
+      .fa-truck-ramp-box, .fa-temperature-low, .fa-boxes-stacked {
         font-size: 1.8rem;
         padding: 0.3em;
       }
