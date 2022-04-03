@@ -40,13 +40,13 @@ export default {
     top: ($height--header) * -1;
     left: 0;
     right: 0;
-    background-image: linear-gradient(rgba(34, 34, 34, 0.5), rgba(26, 24, 24, 0.5)),
+    background-image: linear-gradient(rgba(34, 34, 34, 0.64), rgba(0, 0, 0, 0.64)),
       url(../assets/img/bg-9.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
     .row {
-      padding-top: ($height--header);
+      // padding-top: ($height--header);
       height: 850px;
     }
     h1 {

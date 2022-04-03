@@ -8,11 +8,11 @@
           <h1>TITOLO TITOLO</h1>
         </div>
         <div class="col-7">
-          <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Laborum magni nihil tempore dolorem culpa rem veritatis.
           </p>
         </div>
-        <div class="col-3">
+        <div class="btn_box col-5">
           <button class="btn btn-outline-primary">SEE ALL</button>
         </div>
         <!-- inserire blocco cards al posto dei bottoni -->
@@ -46,5 +46,11 @@ export default {
 
   section {
     padding-top: $height--header;
+    padding-bottom: $height--header;
+    .btn_box {
+      display: flex;
+      justify-content: end;
+      align-items: baseline;
+    }
   }
 </style>
