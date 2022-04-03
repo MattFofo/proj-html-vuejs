@@ -1,6 +1,7 @@
 <!-- teamplate sezioni 'main services' e 'trusted feedback'  -->
 <template>
-  <section class="bg-dark text-white">
+  <section class="bg-dark text-white"
+  :id="this.SectionVersionFromMain == 'V1' ? 'section3' : 'section5' ">
     <div class="container">
       <div class="row align-content-center"
       :class="this.SectionVersionFromMain == 'V2' ? 'text-center' : '' ">

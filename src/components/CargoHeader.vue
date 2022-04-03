@@ -20,7 +20,11 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
         <div class="row">
           <!-- logo -->
           <div class="col-3">
-            <img src="../assets/img/logo-5.png" alt="">
+            <div class="logo_box">
+              <span class="logo logo_highlighted">NEX </span>
+              <span>GEN</span>
+            </div>
+            <!-- <img src="../assets/img/logo-5.png" alt=""> -->
           </div>
           <div class="col-9">
             <!-- navbar -->
@@ -29,7 +33,10 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
                 <!-- link creati dinamicamente -->
                 <li v-for="link in arrLinksNav" :key="link.id + link.text"
                 class="px-3 h-100">
-                  <a class="d-flex align-items-center h-100" href="">{{ link.text }}</a>
+                  <a class="d-flex align-items-center h-100"
+                  :href="`#section${link.id}`">
+                  {{ link.text }}
+                  </a>
                 </li>
                 <!-- link profile -->
                 <li class="h-100 px-3">
@@ -104,5 +111,19 @@ export default {
         margin: 0;
       }
     }
+  }
+  .logo_box {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+  }
+  .logo_highlighted {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: .5em;
+    padding-left: 1.5em;
+    background-color: rgba(0, 255, 255, .2);
+    margin-right: .2em;
   }
 </style>

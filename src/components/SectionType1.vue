@@ -1,6 +1,6 @@
 <!-- teamplate sezioni 'exellent in tranport' e 'get in touch'  -->
 <template>
-  <section class="pb-5">
+  <section class="pb-5" id="section2">
     <div class="container position-relative">
       <div class="row">
         <div class="col-7">
