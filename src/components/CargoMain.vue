@@ -11,9 +11,10 @@ Conterrà anche i dati per creare i due tipi principali di sezioni dinamicamente
     <!-- sezione tipo 1 -->
     <SectionTop />
     <SectionType1 />
-    <SectionType2 />
+    <SectionType2 :section-version-from-main="'V1'" :card-type-from-main="'type1'" />
     <SectionType3 />
     <SectionType4 />
+    <SectionType2 :section-version-from-main="'V2'" :card-type-from-main="'type2'" />
 
     <!-- <CargoSectionPrototype v-for="section in arrSections" :key="section.id"
     :sections-data="section"

@@ -1,19 +1,30 @@
 <!-- card dinamiche per sezione 'main services' 'trusted feedback' e footer  -->
 <template>
   <div class="card position-relative">
-    <div class="icon_box">
+    <div v-if="CardTypeFromMain == 'type1'"
+    class="icon_box">
       <font-awesome-icon icon="fa-solid fa-truck-ramp-box" />
     </div>
-    <h4 class="py-3">titolo titolo</h4>
-    <p class="">Lorem ipsum dolor sit amet tra tralaal consectetur.
-      Iure recusandae debitis, laborum accusamus iusto doloremqu</p>
-  <font-awesome-icon icon="fa-solid fa-arrow-right" />
+    <div v-else>
+      <img src="../assets/img/logo-1.png" alt="">
+    </div>
+    <h4 class="py-3">{{ ObjCard.title }}</h4>
+    <p class="">{{ ObjCard.p1 }}</p>
+    <p v-show="CardTypeFromMain == 'type2'">{{ ObjCard.p1 }}</p>
+    <font-awesome-icon v-if="CardTypeFromMain == 'type1'"
+    icon="fa-solid fa-arrow-right" />
+    <font-awesome-icon v-else
+    icon="fa-solid fa-quote-right" />
   </div>
 </template>
 
 <script>
 export default {
   name: 'CargoCard',
+  props: {
+    CardTypeFromMain: String,
+    ObjCard: Object,
+  },
 };
 </script>
 
@@ -38,6 +49,12 @@ export default {
       right: 2em;
       font-size: 1.2rem;
 
+    }
+    .fa-quote-right {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+      font-size: 1.8rem;
     }
   }
 

@@ -1,14 +1,14 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import {
-  faStar as fasStar, faMagnifyingGlass, faTruckRampBox, faArrowRight,
+  faStar as fasStar, faMagnifyingGlass, faTruckRampBox, faArrowRight, faQuoteRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import Vue from 'vue';
 import App from './App.vue';
 
-library.add(farStar, fasStar, faMagnifyingGlass, faTruckRampBox, faArrowRight);
+library.add(farStar, fasStar, faMagnifyingGlass, faTruckRampBox, faArrowRight, faQuoteRight);
 
 Vue.config.productionTip = false;
 
