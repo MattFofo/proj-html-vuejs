@@ -1,13 +1,18 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faGem } from '@fortawesome/free-regular-svg-icons';
+import Vue from 'vue';
+// eslint-disable-next-line import/no-relative-packages
+import { library } from '../node_modules/@fortawesome/fontawesome-svg-core';
+// eslint-disable-next-line import/no-relative-packages
+import { faFacebookF, faTwitter, faLinkedinIn } from '../node_modules/@fortawesome/free-brands-svg-icons';
+// eslint-disable-next-line import/no-relative-packages
+import { faUser, faGem } from '../node_modules/@fortawesome/free-regular-svg-icons';
 import {
   faTruckRampBox, faArrowRight, faQuoteRight, faTemperatureLow, faBoxesStacked, faLocationDot,
   faClock, faPhone, faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+  // eslint-disable-next-line import/no-relative-packages
+} from '../node_modules/@fortawesome/free-solid-svg-icons';
+// eslint-disable-next-line import/no-relative-packages
+import { FontAwesomeIcon } from '../node_modules/@fortawesome/vue-fontawesome';
 
-import Vue from 'vue';
 import App from './App.vue';
 
 // eslint-disable-next-line max-len

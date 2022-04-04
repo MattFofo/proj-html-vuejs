@@ -147,6 +147,10 @@ export default {
       .form_button {
         width: 50px;
       }
+      input, textarea, select {
+        background-color: #E6ECE8;
+        border-color: #E6ECE8;
+      }
     }
   }
   .col-4.position-absolute {
