@@ -158,7 +158,7 @@ export default {
     padding-bottom: $height--header;
     .btn_box {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: baseline;
     }
   }

@@ -7,10 +7,27 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
       <div class="container">
         <div class="row">
           <div class="col-6">
-              <div class="open_hours">open hours</div>
+              <div class="open_hours">
+                <font-awesome-icon icon="fa-solid fa-clock" />
+                Open Hours: Mon - Sat - 9:00 - 18:00
+              </div>
           </div>
           <div class="col-6">
-            <div class="contacts">telefono email socials</div>
+            <div class="contacts d-flex align-items-center justify-content-between">
+              <div class="phone d-flex align-items-center">
+                <font-awesome-icon icon="fa-solid fa-phone" />
+                +1 (305) 1234-5678
+              </div>
+              <div class="mail d-flex align-items-center">
+                <font-awesome-icon icon="fa-solid fa-envelope" />
+                hello@example.com
+              </div>
+              <div class="socials d-flex justify-content-between align-items-center">
+                <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                <font-awesome-icon icon="fa-brands fa-twitter" />
+                <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -36,11 +53,9 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
                   <a class="d-flex align-items-center h-100"
                   :href="`#section${link.id}`">
                   {{ link.text }}
+                  <!-- link profile -->
+                  <font-awesome-icon v-if="link.icon != null" :icon="`fa-regular ${link.icon}`" />
                   </a>
-                </li>
-                <!-- link profile -->
-                <li class="h-100 px-3">
-                  <a class="d-flex align-items-center h-100" href="">Profile</a>
                 </li>
               </ul>
               <button class="btn btn-primary ms-3">GET IN TOUCH</button>
@@ -61,22 +76,32 @@ export default {
         {
           id: '1',
           text: 'HOME',
+          icon: null,
         },
         {
           id: '2',
           text: 'ABOUT',
+          icon: null,
         },
         {
           id: '3',
           text: 'SERVICES',
+          icon: null,
         },
         {
           id: '4',
           text: 'PROCESS',
+          icon: null,
         },
         {
           id: '5',
           text: 'TESTIMONIAL',
+          icon: null,
+        },
+        {
+          id: '5',
+          text: '',
+          icon: 'fa-user',
         },
       ],
     };
@@ -103,6 +128,9 @@ export default {
     }
     .header_top {
       background-color: darkgray;
+      height: $height--top_header;
+      display: flex;
+      align-items: center;
     }
     .header_bot {
       height: $height--bot_header;
@@ -110,6 +138,13 @@ export default {
         list-style: none;
         margin: 0;
       }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .socials {
+      width: 20%;
     }
   }
   .logo_box {

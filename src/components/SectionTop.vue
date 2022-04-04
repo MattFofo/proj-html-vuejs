@@ -4,16 +4,17 @@
     <div class="container">
       <div class="row align-content-center">
         <div class="col-12">
-          <small>pretitolo</small>
-          <h1>TITOLO TITOLO</h1>
+          <small class="pretitle">LOGISTIC SERVICES</small>
+          <h1>CARGO TRANSPORT</h1>
         </div>
-        <div class="col-5">
-          <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Laborum magni nihil tempore dolorem culpa rem veritatis.
+        <div class="col-6 py-4">
+          <p class="">
+          <!-- eslint-disable-next-line max-len -->
+            Fractional or exclusive road cargo tranportation to all regions, with small medium and large vehicles.
           </p>
         </div>
         <div class="col-8">
-          <button class="btn btn-primary">GET IN TOUCH</button>
+          <button class="btn btn-primary me-4">GET IN TOUCH</button>
           <button class="btn btn-outline-primary">READ MORE</button>
         </div>
       </div>
@@ -51,6 +52,8 @@ export default {
     }
     h1 {
       width: min-content;
+      font-size: 5rem;
+      font-weight: 800;
     }
   }
 </style>
