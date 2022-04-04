@@ -58,7 +58,7 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
                   </a>
                 </li>
               </ul>
-              <button class="btn btn-primary ms-3">GET IN TOUCH</button>
+              <button @click="scroll" class="btn btn-primary ms-3">GET IN TOUCH</button>
             </nav>
           </div>
         </div>
@@ -113,6 +113,10 @@ export default {
     //   ObjLinkNav.text = string;
     //   return ObjLinkNav;
     // },
+    scroll() {
+      const element = document.getElementById('sectionForm');
+      element.scrollIntoView({ behavior: 'smooth' });
+    },
   },
 };
 </script>
