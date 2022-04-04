@@ -6,10 +6,12 @@
         <div class="col-8 pb-3">
           <small class="pretitle">WHO WE ARE</small>
           <h2>
-            <span class="bg_word">
-              <font-awesome-icon icon="fa-regular fa-gem" />
+            <div class="bg_word d-inline-block">
+            <font-awesome-icon icon="fa-regular fa-gem" />
+            <span>
               Excellence
             </span>
+            </div>
             <span>
               in Transport
             </span>

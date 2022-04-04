@@ -7,7 +7,12 @@
 }
 
 .bg_word {
-  background-color: rgba(0, 255, 255, 0.767);
+  background-color: rgba(22, 146, 142, .2);
+  color: $primary;
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .bg_none {
