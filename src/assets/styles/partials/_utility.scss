@@ -1,3 +1,4 @@
+
 .container {
     width: 1100px;
   }
@@ -9,16 +10,36 @@
   background-color: rgba(0, 255, 255, 0.767);
 }
 
+.bg_none {
+  background-color: transparent;
+}
+
 p {
   font-size: 1.4rem;
 }
 
 .pretitle {
-  font-size: 1rem;
-  color: aqua;
+  font-size: 1.2rem;
+  color: $primary;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 600;
+}
+
+.logo_box {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.logo_highlighted {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: .5em;
+  padding-left: 1.5em;
+  background-color: rgba(0, 255, 255, .2);
+  margin-right: .2em;
 }

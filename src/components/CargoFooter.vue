@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="bg-dark">
     <div class="container">
       <!-- top header -->
       <div class="row">
@@ -41,6 +41,8 @@ export default {
             iconPositioned: 'fa-arrow-right',
             button: true,
             logo: true,
+            bg: 'bg_none',
+            pd: 'p-0',
           },
           {
             pretitle: 'pretitolo2',
@@ -51,6 +53,7 @@ export default {
             iconPositioned: null,
             button: false,
             logo: false,
+            bg: 'bg_card',
             links: [
               {
                 id: '1.1',
@@ -87,6 +90,7 @@ export default {
             iconPositioned: null,
             button: false,
             logo: false,
+            bg: 'bg_card',
             links: [
               {
                 id: '1.1',
@@ -123,6 +127,7 @@ export default {
             iconPositioned: null,
             button: false,
             logo: false,
+            bg: 'bg_card',
             links: [
               {
                 id: '1.1',
@@ -189,6 +194,12 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped lang="scss">
+  @import '../assets/styles/partials/variables.scss';
+  @import '../assets/styles/partials/utility.scss';
+  footer {
+    padding-top: $height--header;
+    padding-bottom: $height--header;
+    color: #BCBDBD;
+  }
 </style>

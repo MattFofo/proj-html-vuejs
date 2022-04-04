@@ -1,6 +1,6 @@
 <!-- card dinamiche per sezione 'main services' 'trusted feedback' e footer  -->
 <template>
-  <div class="card position-relative">
+  <div class="card position-relative" :class="[ObjCard.bg, ObjCard.pd]">
     <div v-if="ObjCard.title == null" class="logo_box">
       <span class="logo logo_highlighted">NEX </span>
       <span>GEN</span>
@@ -26,7 +26,7 @@
         <span>Main Avanue, 987</span>
       </div>
     </div>
-    <button v-show="ObjCard.button" class="btn btn-primary">GET IN TOUCH</button>
+    <button v-show="ObjCard.button" class="btn btn-outline-primary">GET IN TOUCH</button>
   </div>
 </template>
 
@@ -41,32 +41,28 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .bg_none {
+    background-color: transparent;
+  }
+  .bg_card {
+    background-color: #19191F;
+  }
   .card {
     padding: 2em;
-    background-color: darkgray;
-    .icon_box {
-      width: fit-content;
-      background-color: aqua;
-      padding: 0.3em;
-      border-radius: 50%;
-      height: fit-content;
-      .fa-truck-ramp-box, .fa-temperature-low, .fa-boxes-stacked {
-        font-size: 1.8rem;
-        padding: 0.3em;
-      }
+    border: 0;
+    p {
+      font-size: 1.1rem;
     }
-    .fa-arrow-right {
-      position: absolute;
-      top: 2em;
-      right: 2em;
-      font-size: 1.2rem;
-
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    .fa-quote-right {
-      position: absolute;
-      bottom: 1em;
-      right: 1em;
-      font-size: 1.8rem;
+    a {
+      color: #BCBDBD;
+      text-decoration: none;
+    }
+    button {
+      align-self: baseline;
     }
   }
 

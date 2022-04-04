@@ -5,7 +5,7 @@
       <div class="row align-content-center">
         <div class="col-12">
           <small class="pretitle">LOGISTIC SERVICES</small>
-          <h1>CARGO TRANSPORT</h1>
+          <h1 class="text-white">CARGO TRANSPORT</h1>
         </div>
         <div class="col-6 py-4">
           <p class="">
@@ -36,7 +36,7 @@ export default {
   @import '../assets/styles/partials/utility.scss';
 
   section {
-    color: white;
+    color: $color--text1;
     position: relative;
     top: ($height--header) * -1;
     left: 0;

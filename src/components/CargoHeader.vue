@@ -8,24 +8,24 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
         <div class="row">
           <div class="col-6">
               <div class="open_hours">
-                <font-awesome-icon icon="fa-solid fa-clock" />
+                <font-awesome-icon icon="fa-solid fa-clock" class="pe-1" />
                 Open Hours: Mon - Sat - 9:00 - 18:00
               </div>
           </div>
           <div class="col-6">
             <div class="contacts d-flex align-items-center justify-content-between">
               <div class="phone d-flex align-items-center">
-                <font-awesome-icon icon="fa-solid fa-phone" />
-                +1 (305) 1234-5678
+                <font-awesome-icon icon="fa-solid fa-phone" class="pe-2" />
+                <span>+1 (305) 1234-5678</span>
               </div>
               <div class="mail d-flex align-items-center">
-                <font-awesome-icon icon="fa-solid fa-envelope" />
-                hello@example.com
+                <font-awesome-icon icon="fa-solid fa-envelope" class="pe-2" />
+                <span>hello@example.com</span>
               </div>
               <div class="socials d-flex justify-content-between align-items-center">
-                <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                <font-awesome-icon icon="fa-brands fa-twitter" />
-                <font-awesome-icon icon="fa-brands fa-linkedin-in" />
+                <font-awesome-icon icon="fa-brands fa-facebook-f" class="pe-2" />
+                <font-awesome-icon icon="fa-brands fa-twitter" class="pe-2" />
+                <font-awesome-icon icon="fa-brands fa-linkedin-in" class="pe-2" />
               </div>
             </div>
           </div>
@@ -127,11 +127,14 @@ export default {
 
   header {
     z-index: 100;
+    color: $color--text1;
     button {
       flex-shrink: 0;
+      padding-left: .8rem;
+      padding-right: .8rem;
     }
     .header_top {
-      background-color: darkgray;
+      background-color: $bg--header;
       height: $height--top_header;
       display: flex;
       align-items: center;
@@ -145,7 +148,7 @@ export default {
     }
     a {
       text-decoration: none;
-      color: white;
+      color: $color--text2;
     }
     .socials {
       width: 20%;
@@ -154,7 +157,7 @@ export default {
   .logo_box {
     display: flex;
     align-items: center;
-    color: white;
+    color: $color--text1;
     font-weight: 600;
   }
   .logo_highlighted {
