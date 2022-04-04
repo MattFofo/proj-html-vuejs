@@ -1,3 +1,4 @@
+@import './variables';
 
 .container {
     width: 1100px;
@@ -8,11 +9,12 @@
 
 .bg_word {
   background-color: rgba(22, 146, 142, .2);
-  color: $primary;
+  color: $primaryDark;
   padding-top: .125rem;
   padding-bottom: .125rem;
   padding-left: .5rem;
   padding-right: .5rem;
+  font-weight: 800;
 }
 
 .bg_none {

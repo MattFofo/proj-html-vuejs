@@ -70,8 +70,8 @@
             </div>
             <div class="certifications">
               <h3>certifications</h3>
-              <img class="certificate w-50" src="../assets/img/certificate.png" alt="">
-              <img class="certificate w-50" src="../assets/img/certificate.png" alt="">
+              <img class="certificate me-4" src="../assets/img/certificate.png" alt="">
+              <img class="certificate" src="../assets/img/certificate.png" alt="">
             </div>
           </div>
         </div>
@@ -110,7 +110,8 @@ export default {
   }
   .certifications {
     img {
-      padding: 1rem;
+      box-shadow: 10px 10px 20px 1px #00000030;
+      width: 40%
     }
   }
 </style>
