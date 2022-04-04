@@ -1,20 +1,32 @@
 <!-- card dinamiche per sezione 'main services' 'trusted feedback' e footer  -->
 <template>
   <div class="card position-relative">
-    <div v-if="CardTypeFromMain == 'type1'"
-    class="icon_box">
-      <font-awesome-icon :icon="`fa-solid ${ObjCard.icon}`" />
+    <div v-if="ObjCard.title == null" class="logo_box">
+      <span class="logo logo_highlighted">NEX </span>
+      <span>GEN</span>
     </div>
-    <div v-else>
-      <img :src="`${ObjCard.icon}`" alt="">
+    <h4 v-else class="py-3">{{ ObjCard.title }}</h4>
+    <p v-if="ObjCard.p1 != null" class="">{{ ObjCard.p1 }}</p>
+    <ul v-if="ObjCard.links != null">
+      <li v-for="link in ObjCard.links" :key="link.id">
+        <a href="">{{ link.text }}</a>
+      </li>
+    </ul>
+    <div v-else class="right_content_contacts pt-3 pb-3">
+      <div class="phone">
+        <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
+        <span>+1 (305) 1234-5678</span>
+      </div>
+      <div class="mail py-3">
+        <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
+        <span>hello@example.com</span>
+      </div>
+      <div class="address">
+        <font-awesome-icon class="icon" icon="fa-solid fa-location-dot" />
+        <span>Main Avanue, 987</span>
+      </div>
     </div>
-    <h4 class="py-3">{{ ObjCard.title }}</h4>
-    <p class="">{{ ObjCard.p1 }}</p>
-    <p v-show="CardTypeFromMain == 'type2'">{{ ObjCard.p1 }}</p>
-    <font-awesome-icon v-if="CardTypeFromMain == 'type1'"
-    :icon="`fa-solid ${ObjCard.iconPositioned}`" />
-    <font-awesome-icon v-else
-    :icon="`fa-solid ${ObjCard.iconPositioned}`" />
+    <button v-show="ObjCard.button" class="btn btn-primary">GET IN TOUCH</button>
   </div>
 </template>
 
