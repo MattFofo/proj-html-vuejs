@@ -110,7 +110,7 @@ export default {
   }
   .certifications {
     img {
-      box-shadow: 10px 10px 20px 1px #00000030;
+      box-shadow: 10px 10px 20px 1px #86868630;
       width: 40%
     }
   }

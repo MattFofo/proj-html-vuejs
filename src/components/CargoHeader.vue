@@ -33,17 +33,17 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
       </div>
     </div>
     <div class="header_bot d-flex align-items-center">
-      <div class="container">
-        <div class="row">
+      <div class="container h-100">
+        <div class="row h-100">
           <!-- logo -->
           <div class="col-3">
-            <div class="logo_box">
+            <div class="logo_box h-100">
               <span class="logo logo_highlighted">NEX </span>
               <span>GEN</span>
             </div>
             <!-- <img src="../assets/img/logo-5.png" alt=""> -->
           </div>
-          <div class="col-9">
+          <div class="col-9 h-100">
             <!-- navbar -->
             <nav class="d-flex justify-content-end align-items-center h-100">
               <ul class="d-flex align-items-center h-100">
