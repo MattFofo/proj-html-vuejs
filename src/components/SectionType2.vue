@@ -21,11 +21,6 @@
           SEE ALL
           </button>
         </div>
-        <!-- inserire blocco cards al posto dei bottoni -->
-        <!-- <div class="col-8">
-          <button class="btn btn-primary">GET IN TOUCH</button>
-          <button class="btn btn-outline-primary">READ MORE</button>
-        </div> -->
       </div>
       <div class="row">
         <div v-for="card in arrCards" :key="card.title" class="col">
@@ -96,16 +91,16 @@ export default {
             pretitle: 'pretitolo1type2',
             title: 'titolo1type2',
             icon: logo1,
-            p1: 'lorem1.1type2',
-            p2: 'lorem1.2type2',
+            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus, libero aspernatur mollitia dolor qui. Corporis natus, libero aspernatur mollitia.',
+            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             iconPositioned: 'fa-quote-right',
           },
           {
             pretitle: 'pretitolo2type2',
             title: 'titolo2type2',
             icon: logo2,
-            p1: 'lorem2.1type2',
-            p2: 'lorem2.2type2',
+            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus, libero aspernatur mollitia dolor qui. Corporis natus, libero aspernatur mollitia.',
+            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             iconPositioned: 'fa-quote-right',
 
           },
@@ -113,8 +108,8 @@ export default {
             pretitle: 'pretitolo3type2',
             title: 'titolo3type2',
             icon: logo3,
-            p1: 'lorem3.1type2',
-            p2: 'lorem3.2type2',
+            p1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus, libero aspernatur mollitia dolor qui. Corporis natus, libero aspernatur mollitia.',
+            p2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             iconPositioned: 'fa-quote-right',
           },
         ];

@@ -5,19 +5,21 @@
     class="icon_box">
       <font-awesome-icon :icon="`fa-solid ${ObjCard.icon}`" class="icon" />
     </div>
-    <div v-else>
+    <div v-else class="mb-3">
       <img :src="`${ObjCard.icon}`" alt="">
     </div>
-    <h4 class="py-3 text-white fw-bold">{{ ObjCard.title }}</h4>
-    <p class="">{{ ObjCard.p1 }}</p>
+    <h4 v-show="CardTypeFromMain == 'type1'"
+    class="py-3 text-white fw-bold">{{ ObjCard.title }}</h4>
+    <p v-show="CardTypeFromMain == 'type1'" class="">{{ ObjCard.p1 }}</p>
     <p v-show="CardTypeFromMain == 'type2'">{{ ObjCard.p1 }}</p>
+    <p v-show="CardTypeFromMain == 'type2'">{{ ObjCard.p2 }}</p>
     <font-awesome-icon v-if="CardTypeFromMain == 'type1'"
     :icon="`fa-solid ${ObjCard.iconPositioned}`"
     class="icon"
     />
     <font-awesome-icon v-else
     :icon="`fa-solid ${ObjCard.iconPositioned}`"
-    class="icon"
+    class="icon_bot"
     />
   </div>
 </template>
@@ -44,6 +46,11 @@ export default {
       font-size: 1.1rem;
       color: $color--text1;
     }
+    img {
+      filter: invert(100%);
+      filter: brightness(100);
+      width: 40%;
+    }
     .icon_box {
       width: fit-content;
       background-color: $primaryTransp;
@@ -57,6 +64,9 @@ export default {
     }
     .icon {
       color: $primary;
+    }
+    .icon_bot {
+      color: #3E3E43;
     }
     .fa-arrow-right {
       position: absolute;

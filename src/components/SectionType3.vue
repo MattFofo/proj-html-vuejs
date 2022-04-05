@@ -127,9 +127,6 @@ export default {
         right: 2em;
         font-size: 1.2rem;
       }
-      p {
-
-      }
     }
   }
 </style>
