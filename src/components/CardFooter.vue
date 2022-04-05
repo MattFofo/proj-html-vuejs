@@ -79,6 +79,9 @@ export default {
       li {
         padding-bottom: .4rem;
       }
+      li:hover a{
+        text-decoration: underline;
+      }
     }
     a {
       color: $color--text1;

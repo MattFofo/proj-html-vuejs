@@ -19,8 +19,11 @@
           </div>
           <div class="col-6 text-end">
             <p>
-              &#169; 2020 NEXGEN is Proudly Powered by <span class="text-primary">Codings.</span>
-              </p>
+              &#169; 2020 NEXGEN is Proudly Powered by
+              <span class="text-primary undeline_hover">
+                <a id='link_end_page' href="#!">Codings.</a>
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -227,7 +230,10 @@ export default {
         margin: 0;
         color: $color--text1;
       }
+      #link_end_page, .undeline_hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
   }
-
 </style>
