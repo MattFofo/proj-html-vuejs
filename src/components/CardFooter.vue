@@ -27,7 +27,8 @@
         <span class="ms-2">Main Avanue, 987</span>
       </div>
     </div>
-    <button v-show="ObjCard.button" class="btn btn-outline-primary mt-3">GET IN TOUCH</button>
+    <button @click="scroll" v-show="ObjCard.button"
+    class="btn btn-outline-primary mt-3">GET IN TOUCH</button>
   </div>
 </template>
 
@@ -37,6 +38,12 @@ export default {
   props: {
     CardTypeFromFooter: String,
     ObjCard: Object,
+  },
+  methods: {
+    scroll() {
+      const element = document.getElementById('sectionForm');
+      element.scrollIntoView({ behavior: 'smooth' });
+    },
   },
 };
 </script>
