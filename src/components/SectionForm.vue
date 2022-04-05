@@ -17,50 +17,59 @@
         <div class="col-7 mb-fix">
           <p>We will respond to your message as soon as possible.</p>
         </div>
+
         <!-- form -->
-        <div class="col-7 col-form">
-          <form class="row">
+        <div v-show="formSubmitted !== true" class="col-7 col-form">
+          <form class="row needs-validation" novalidate>
             <div class="col-7 w-100">
               <div class="row gx-3 gy-1">
-                <div class="col-6">
+                <!-- input nome -->
+                <div class="col-6 form-outline">
                   <label for="name" class="form-label w-100">
-                    <input type="name" class="form-control" id="name"
+                    <input type="text" class="form-control" id="name"
                     placeholder="Name"
-                    v-model="objFormSubmit.name">
+                    v-model="objFormSubmit.name" required>
                   </label>
                 </div>
+                <!-- input email -->
                 <div class="col-6">
                   <label for="email" class="form-label w-100">
                     <input type="email" class="form-control" id="email"
                     placeholder="Email"
-                    v-model="objFormSubmit.email">
+                    v-model="objFormSubmit.email" required>
                   </label>
                 </div>
+                <!-- input numero di telefono -->
                 <div class="col-6">
                   <label for="phone" class="form-label w-100">
-                    <input type="phone" class="form-control" id="number"
+                    <input type="number" class="form-control" id="number"
                     placeholder="Phone"
-                    v-model="objFormSubmit.phone">
+                    v-model="objFormSubmit.phone" required>
                   </label>
                 </div>
+                <!-- input select more info -->
                 <div class="col-6">
                   <label for="inputMoreInfo" class="form-label w-100">
                     <select id="inputMoreInfo" class="form-select"
                     v-model="objFormSubmit.moreInfo">
                       <option selected>More Info</option>
-                      <option>...</option>
+                      <option>Opzione1</option>
+                      <option>Opzione2</option>
+                      <option>Opzione3</option>
                     </select>
                   </label>
                 </div>
+                <!-- input messaggio -->
                 <div class="col-12">
                   <label for="inputMessage" class="form-label w-100">
                     <textarea type="text" class="form-control w-100" id="inputMessage"
-                    placeholder="Message" rows="12" v-model="objFormSubmit.message"></textarea>
+                    placeholder="Message" rows="12" v-model="objFormSubmit.message"
+                    required></textarea>
                   </label>
                 </div>
               </div>
               <div class="col-1">
-                <button @click.prevent='formSubmit()'
+                <button @click='formSubmit()'
                 type="submit" class="btn btn-primary form_button">
                   SEND
                 </button>
@@ -68,6 +77,16 @@
             </div>
           </form>
         </div>
+
+        <div v-show="formSubmitted == true" class="col-8">
+          <div class="row">
+            <div class="col-8">
+              <h2 class="pb-2">La tua richiesta è stata presa in carico.</h2>
+              <h3>Grazie per averci contattato!</h3>
+            </div>
+          </div>
+        </div>
+
         <!-- right content -->
         <div class="col-4 position-absolute">
           <div class="right_content">
@@ -115,18 +134,49 @@ export default {
         message: '',
       },
       arrFormData: [],
+      formSubmitted: false,
     };
   },
   methods: {
     formSubmit() {
-      this.arrFormData.push(this.objFormSubmit);
-      this.objFormSubmit = {
-        name: '',
-        email: '',
-        phone: '',
-        moreInfo: 'More Info',
-        message: '',
-      };
+      this.formControl();
+      // this.arrFormData.push(this.objFormSubmit);
+      // this.objFormSubmit = {
+      //   name: '',
+      //   email: '',
+      //   phone: '',
+      //   moreInfo: 'More Info',
+      //   message: '',
+      // };
+    },
+    formControl() {
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation');
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach((form) => {
+          form.addEventListener('submit', (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            } else {
+              this.arrFormData.push(this.objFormSubmit);
+              this.objFormSubmit = {
+                name: '',
+                email: '',
+                phone: '',
+                moreInfo: 'More Info',
+                message: '',
+              };
+              // form.classList.remove('was-validated, is-invalid');
+              this.formSubmitted = true;
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      })();
     },
   },
 };
@@ -162,6 +212,17 @@ export default {
       #inputMoreInfo {
         color: #6C6F75;;
         opacity: 1;
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
       }
     }
   }

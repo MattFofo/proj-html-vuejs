@@ -98,7 +98,7 @@ export default {
           icon: null,
         },
         {
-          id: '5',
+          id: '6',
           text: '',
           icon: 'fa-user',
         },

@@ -3,11 +3,15 @@
     <CargoHeader />
     <CargoMain />
     <CargoFooter />
+
+    <!-- bottone scroll senza max width -->
     <!-- <div @click="scrollPageTop" @keyup="scrollTop = 0" class="scroll_top" id="scroll_top">
       <font-awesome-icon icon="fa-solid fa-arrow-up" />
     </div> -->
+
+    <!-- bottone scroll con max width -->
     <div class="fixed">
-      <div @click="scrollPageTop" @keyup="scrollTop = 0" class="content scroll_page">
+      <div @click="scrollPageTop" @keyup="scrollPageTop" class="content scroll_page">
         <font-awesome-icon icon="fa-solid fa-arrow-up" />
       </div>
     </div>
