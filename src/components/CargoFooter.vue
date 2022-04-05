@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-dark">
+  <footer class="bg_dark">
     <div class="container">
       <!-- top header -->
       <div class="row">

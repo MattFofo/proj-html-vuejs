@@ -37,20 +37,6 @@ export default {
 
     // CargoSectionPrototype,
   },
-  data() {
-    return {
-      sectionType2V1: {
-        title: '',
-        pretitle: '',
-        p: '',
-      },
-      sectionType2V2: {
-        title: '',
-        pretitle: '',
-        p: '',
-      },
-    };
-  },
 };
 </script>
 

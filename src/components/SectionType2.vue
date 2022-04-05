@@ -1,21 +1,21 @@
 <!-- teamplate sezioni 'main services' e 'trusted feedback'  -->
 <template>
-  <section class="bg-dark text-white"
+  <section class="bg_dark text-white"
   :id="this.SectionVersionFromMain == 'V1' ? 'section3' : 'section5' ">
     <div class="container">
       <div class="row align-content-center"
       :class="this.SectionVersionFromMain == 'V2' ? 'text-center' : '' ">
         <div class="col-12">
-          <small>{{ this.objSection.pretitle }}</small>
-          <h1>
-            <span>{{ this.objSection.title.word1 }} </span>
-            <span class="bg_word">{{ this.objSection.title.word2 }}</span>
-          </h1>
+          <small class="pretitle">{{ this.objSection.pretitle }}</small>
+          <h2 class="title">
+            <span class="fw-bolder">{{ this.objSection.title.word1 }} </span>
+            <span class="bg_word text-white">{{ this.objSection.title.word2 }}</span>
+          </h2>
         </div>
-        <div :class="this.SectionVersionFromMain == 'V2' ? 'col-12 text-center' : 'col-7' ">
+        <div :class="this.SectionVersionFromMain == 'V2' ? 'col-12 text-center' : 'col-9' ">
           <p class="mb-5">{{ this.objSection.p }}</p>
         </div>
-        <div class="btn_box col-5">
+        <div class="btn_box col-3">
           <button v-show="this.SectionVersionFromMain == 'V1'"
           class="btn btn-outline-primary">
           SEE ALL
@@ -65,26 +65,26 @@ export default {
         this.arrCards = [
           {
             pretitle: 'pretitolo1',
-            title: 'titolo1',
+            title: 'Technology',
             icon: 'fa-truck-ramp-box',
-            p1: 'lorem1.1',
+            p1: 'We are continually focused on developing technology solutions adapted to our clients needs.',
             p2: 'lorem1.2',
             iconPositioned: 'fa-arrow-right',
           },
           {
             pretitle: 'pretitolo2',
-            title: 'titolo2',
+            title: 'Refeer Cargo',
             icon: 'fa-temperature-low',
-            p1: 'lorem2.1',
+            p1: 'Regular and frequent monitoring from the receipt of the loaded container to the final destination.',
             p2: 'lorem2.2',
             iconPositioned: 'fa-arrow-right',
 
           },
           {
             pretitle: 'pretitolo3',
-            title: 'titolo3',
+            title: 'Dry Cargo',
             icon: 'fa-boxes-stacked',
-            p1: 'lorem3.1',
+            p1: 'We work with most types of dry cargo, from valuable cargo to thr most dangerous requiring care.',
             p2: 'lorem3.2',
             iconPositioned: 'fa-arrow-right',
           },
@@ -128,7 +128,7 @@ export default {
             word2: 'SERVICES',
           },
           pretitle: 'ROAD TRANSPORT',
-          p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magni nihil tempore dolorem culpa rem veritatis.',
+          p: 'With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.',
         };
       } if (strVersionSection === 'V2') {
         this.objSection = {
@@ -158,6 +158,9 @@ export default {
     padding-bottom: $height--header;
     max-width: 1980px;
     margin: auto;
+    p {
+      color: $color--text1;
+    }
     .btn_box {
       display: flex;
       justify-content: flex-end;

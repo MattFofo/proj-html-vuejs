@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss">
   $primary: #16928E;
+  $bg-dark: #111117;
   @import 'bootstrap';
   @import './assets/styles/style.scss';
   button {

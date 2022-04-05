@@ -5,7 +5,7 @@
       <div class="row gx-5">
         <div class="col-8 pb-1">
           <small class="pretitle">WHO WE ARE</small>
-          <h2>
+          <h2 class="title">
             <div class="bg_word d-inline-block">
             <font-awesome-icon icon="fa-regular fa-gem" />
             <span>

@@ -41,11 +41,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '../assets/styles/partials/variables.scss';
+  @import '../assets/styles/partials/utility.scss';
+
   .bg_none {
     background-color: transparent;
   }
   .bg_card {
-    background-color: #19191F;
+    background-color: $bg--card;
   }
   .card {
     padding: 2em;

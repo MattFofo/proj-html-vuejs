@@ -18,12 +18,21 @@
   border-radius: 4px;
 }
 
+.bg_dark {
+  background-color: $bg-dark;
+}
+
 .bg_none {
   background-color: transparent;
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+}
+
+.title {
+  font-weight: 800;
+  margin-bottom: 1.5rem;
 }
 
 .pretitle {
