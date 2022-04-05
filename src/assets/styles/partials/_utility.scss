@@ -1,7 +1,7 @@
 
 .container {
-    width: 1200px;
-  }
+  width: 1200px;
+}
 .container-fluid {
   max-width: 1980px;
 }
@@ -18,11 +18,11 @@
 }
 
 .bg_dark {
-  background-color: $bg-dark;
+  background-color: $bg--dark;
 }
 
 .bg_light {
-  background-color: $bg_light;
+  background-color: $bg--light;
 }
 
 .bg_none {
@@ -31,6 +31,7 @@
 
 p {
   font-size: 1.1rem;
+  color: $color--text3;
 }
 
 .title {
@@ -72,6 +73,10 @@ h2 {
 }
 
 .mx-6 {
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+}
+
+.mb-fix {
+  margin-bottom: 2.2rem;
 }

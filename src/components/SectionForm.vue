@@ -3,9 +3,9 @@
   <section class="" id="sectionForm">
     <div class="container position-relative">
       <div class="row gx-5">
-        <div class="col-8 pb-3">
+        <div class="col-7 pb-1">
           <small class="pretitle">WHO WE ARE</small>
-          <h2>
+          <h2 class="title">
             <span>
               Get In
             </span>
@@ -14,14 +14,14 @@
             </span>
           </h2>
         </div>
-        <div class="col-8">
+        <div class="col-7 mb-fix">
           <p>We will respond to your message as soon as possible.</p>
         </div>
         <!-- form -->
-        <div class="col-8">
+        <div class="col-7 col-form">
           <form class="row">
-            <div class="col-8 w-100">
-              <div class="row">
+            <div class="col-7 w-100">
+              <div class="row gx-3 gy-1">
                 <div class="col-6">
                   <label for="name" class="form-label w-100">
                     <input type="name" class="form-control" id="name"
@@ -59,35 +59,39 @@
                   </label>
                 </div>
               </div>
-              <button @click.prevent='formSubmit()'
-              type="submit" class="btn btn-primary form_button">Send</button>
+              <div class="col-1">
+                <button @click.prevent='formSubmit()'
+                type="submit" class="btn btn-primary form_button">
+                  SEND
+                </button>
+              </div>
             </div>
           </form>
         </div>
         <!-- right content -->
         <div class="col-4 position-absolute">
           <div class="right_content">
-            <h3 class="pb-4">Example Inc</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. rupti cupiditate</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. rupti cupiditate</p>
+            <h3 class="pb-4">Example Inc.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, rupti cupiditate.</p>
+            <p>Praseant sit amus sotare consectetur adipisicing elit rupti cupiditate.</p>
             <div class="right_content_contacts pt-3 pb-3">
-              <div class="phone">
+              <div class="phone d-flex align-items-center mb-2">
                 <div class="icon_box me-2">
                   <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
                 </div>
-                <span>+1 (305) 1234-5678</span>
+                <span class="contacts_info">+1 (305) 1234-5678</span>
               </div>
-              <div class="mail py-3">
+              <div class="mail py-3 d-flex align-items-center mb-2">
                 <div class="icon_box me-2">
                   <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
                 </div>
-                <span>hello@example.com</span>
+                <span class="contacts_info">hello@example.com</span>
               </div>
-              <div class="address">
+              <div class="address d-flex align-items-center mb-2">
                 <div class="icon_box me-2">
                   <font-awesome-icon class="icon" icon="fa-solid fa-location-dot" />
                 </div>
-                <span>Main Avanue, 987</span>
+                <span class="contacts_info">Main Avenue, 987</span>
               </div>
             </div>
           </div>
@@ -137,7 +141,11 @@ export default {
       font-weight: 600;
     }
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
+      color: $color--text3;
+    }
+    .col-form {
+      width: 64%;
     }
     form {
       height: 25%;
@@ -147,9 +155,13 @@ export default {
       .form_button {
         width: 50px;
       }
-      input, textarea, select {
-        background-color: #E6ECE8;
-        border-color: #E6ECE8;
+      input, textarea, select, option {
+        background-color: $bg--form;
+        border-color: $bg--form;
+      }
+      #inputMoreInfo {
+        color: #6C6F75;;
+        opacity: 1;
       }
     }
   }
@@ -162,21 +174,27 @@ export default {
       width: 35%;
     }
     .right_content_contacts {
+      .contacts_info {
+        font-size: 1.1rem;
+      }
       .icon_box {
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
-        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: $primaryTransp;
         border-radius: 20px;
         text-align: center;
         vertical-align: middle;
       }
       .icon {
         vertical-align: middle;
-        // padding: .4em;
-        // border-radius: 50%;
-        // background-color: aqua;
-        // color: beige;
+        color: $primary;
+        font-size: 1.1rem;
+      }
+      span {
+        color: $primary;
       }
     }
     button {

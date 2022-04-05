@@ -40,7 +40,6 @@ export default {
 
   .card {
     padding: 2em;
-    background-color: darkgray;
     background-color: $bg--card;
     p {
       font-size: 1.1rem;

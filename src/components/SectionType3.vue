@@ -85,7 +85,7 @@ export default {
     max-width: 1980px;
     margin: auto;
     .row_cards {
-      bottom: calc(calc($height--card-icon-box / 2) - calc($height--line-break / 2) + 3px);
+      bottom: calc(calc($height--card-icon-box / 2) - calc($height--line-break / 2) + 4px);
     }
     .line_break {
       height: $height--line-break;
