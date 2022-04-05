@@ -3,30 +3,31 @@
   <div class="card position-relative" :class="[ObjCard.bg, ObjCard.pd]">
     <div v-if="ObjCard.title == null" class="logo_box">
       <span class="logo logo_highlighted">NEX </span>
-      <span>GEN</span>
+      <span class="logo">GEN</span>
     </div>
     <h4 v-else class="py-3">{{ ObjCard.title }}</h4>
-    <p v-if="ObjCard.p1 != null" class="">{{ ObjCard.p1 }}</p>
+    <p v-if="ObjCard.p1 != null" class="pt-3">{{ ObjCard.p1 }}</p>
     <ul v-if="ObjCard.links != null">
       <li v-for="link in ObjCard.links" :key="link.id">
-        <a href="">{{ link.text }}</a>
+        <font-awesome-icon icon="fa-solid fa-chevron-right" />
+        <a href="#!">{{ link.text }}</a>
       </li>
     </ul>
     <div v-else class="right_content_contacts pt-3 pb-3">
       <div class="phone">
         <font-awesome-icon class="icon" icon="fa-solid fa-phone" />
-        <span>+1 (305) 1234-5678</span>
+        <span class="ms-2">+1 (305) 1234-5678</span>
       </div>
       <div class="mail py-3">
         <font-awesome-icon class="icon" icon="fa-solid fa-envelope" />
-        <span>hello@example.com</span>
+        <span class="ms-2">hello@example.com</span>
       </div>
       <div class="address">
         <font-awesome-icon class="icon" icon="fa-solid fa-location-dot" />
-        <span>Main Avanue, 987</span>
+        <span class="ms-2">Main Avanue, 987</span>
       </div>
     </div>
-    <button v-show="ObjCard.button" class="btn btn-outline-primary">GET IN TOUCH</button>
+    <button v-show="ObjCard.button" class="btn btn-outline-primary mt-3">GET IN TOUCH</button>
   </div>
 </template>
 
@@ -55,13 +56,25 @@ export default {
     border: 0;
     p {
       font-size: 1.1rem;
+      color: $color--text1;
+    }
+    h4 {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
     }
     ul {
       list-style: none;
       padding: 0;
+      .fa-chevron-right {
+        padding-right: .8rem;
+      }
+      li {
+        padding-bottom: .4rem;
+      }
     }
     a {
-      color: #BCBDBD;
+      color: $color--text1;
       text-decoration: none;
     }
     button {

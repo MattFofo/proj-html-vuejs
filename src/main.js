@@ -7,7 +7,7 @@ import { faFacebookF, faTwitter, faLinkedinIn } from '../node_modules/@fortaweso
 import { faUser, faGem } from '../node_modules/@fortawesome/free-regular-svg-icons';
 import {
   faTruckRampBox, faArrowRight, faQuoteRight, faTemperatureLow, faBoxesStacked, faLocationDot,
-  faClock, faPhone, faEnvelope,
+  faClock, faPhone, faEnvelope, faChevronRight,
   // eslint-disable-next-line import/no-relative-packages
 } from '../node_modules/@fortawesome/free-solid-svg-icons';
 // eslint-disable-next-line import/no-relative-packages
@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from '../node_modules/@fortawesome/vue-fontawesome';
 import App from './App.vue';
 
 // eslint-disable-next-line max-len
-library.add(faTruckRampBox, faArrowRight, faQuoteRight, faTemperatureLow, faBoxesStacked, faUser, faClock, faPhone, faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faGem, faLocationDot);
+library.add(faTruckRampBox, faArrowRight, faQuoteRight, faTemperatureLow, faBoxesStacked, faUser, faClock, faPhone, faEnvelope, faFacebookF, faTwitter, faLinkedinIn, faGem, faLocationDot, faChevronRight);
 
 Vue.config.productionTip = false;
 

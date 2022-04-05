@@ -1,14 +1,29 @@
 <template>
-  <footer class="bg_dark">
-    <div class="container">
-      <!-- top header -->
-      <div class="row">
-        <div v-for="card in arrCards" :key="card.id" class="col">
-          <CardFooter :CardTypeFromFooter="typeCard" :ObjCard="card" />
+  <footer>
+      <!-- top footer -->
+    <div class="top_footer bg_dark">
+      <div class="container">
+        <div class="row">
+          <div v-for="card in arrCards" :key="card.id" class="col">
+            <CardFooter :CardTypeFromFooter="typeCard" :ObjCard="card" />
+          </div>
         </div>
       </div>
-      <!-- bot header -->
-      <div class="row"></div>
+    </div>
+    <!-- bot footer -->
+    <div class="bot_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p>Enjoy the low price. We are tracking any intention of piracy</p>
+          </div>
+          <div class="col-6 text-end">
+            <p>
+              &#169; 2020 NEXGEN is Proudly Powered by <span class="text-primary">Codings.</span>
+              </p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -36,7 +51,7 @@ export default {
             pretitle: 'pretitolo1',
             title: null,
             icon: 'fa-truck-ramp-box',
-            p1: 'A functional html lorem bral conteru dtru',
+            p1: 'A functional html Template for Corporate & Business',
             p2: 'lorem1.2',
             iconPositioned: 'fa-arrow-right',
             button: true,
@@ -94,27 +109,27 @@ export default {
             links: [
               {
                 id: '1.1',
-                text: 'The Company',
+                text: 'Industrialized',
               },
               {
                 id: '1.2',
-                text: 'Institution',
+                text: 'Chemicals',
               },
               {
                 id: '1.3',
-                text: 'Socials & Events',
+                text: 'Packaged Liquids',
               },
               {
                 id: '1.4',
-                text: 'Innovation',
+                text: 'Construction',
               },
               {
                 id: '1.5',
-                text: 'Enviroment',
+                text: 'Laminated Wood',
               },
               {
                 id: '1.6',
-                text: 'Technology',
+                text: 'And others',
               },
             ],
           },
@@ -131,27 +146,27 @@ export default {
             links: [
               {
                 id: '1.1',
-                text: 'The Company',
+                text: 'Responsability',
               },
               {
                 id: '1.2',
-                text: 'Institution',
+                text: 'Term of Use',
               },
               {
                 id: '1.3',
-                text: 'Socials & Events',
+                text: 'About Cookies',
               },
               {
                 id: '1.4',
-                text: 'Innovation',
+                text: 'Privacy Policy',
               },
               {
                 id: '1.5',
-                text: 'Enviroment',
+                text: 'Accessibility',
               },
               {
                 id: '1.6',
-                text: 'Technology',
+                text: 'Information',
               },
             ],
           },
@@ -198,10 +213,20 @@ export default {
   @import '../assets/styles/partials/variables.scss';
   @import '../assets/styles/partials/utility.scss';
   footer {
-    padding-top: $height--header;
-    padding-bottom: $height--header;
-    color: #BCBDBD;
+    color: $color--text1;
     max-width: 1980px;
     margin: auto;
+    .top_footer {
+      padding-top: $height--header;
+      padding-bottom: $height--header;
+    }
+    .bot_footer {
+      padding: 2rem;
+      background-color: $bg--darker;
+      p {
+        margin: 0;
+        color: $color--text1;
+      }
+    }
   }
 </style>

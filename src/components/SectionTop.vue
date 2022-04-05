@@ -48,6 +48,9 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
+    p {
+      color: $color--text1;
+    }
     .row {
       // padding-top: ($height--header);
       height: 850px;

@@ -39,9 +39,8 @@ header diviso in due parti: -top con i contatti e orari di apertura e navbar con
           <div class="col-3">
             <div class="logo_box h-100">
               <span class="logo logo_highlighted">NEX </span>
-              <span>GEN</span>
+              <span class="logo">GEN</span>
             </div>
-            <!-- <img src="../assets/img/logo-5.png" alt=""> -->
           </div>
           <div class="col-9 h-100">
             <!-- navbar -->
@@ -107,12 +106,6 @@ export default {
     };
   },
   methods: {
-    // createObjLink(number, string) {
-    //   const ObjLinkNav = { id: '', text: '' };
-    //   ObjLinkNav.id = number;
-    //   ObjLinkNav.text = string;
-    //   return ObjLinkNav;
-    // },
     scroll() {
       const element = document.getElementById('sectionForm');
       element.scrollIntoView({ behavior: 'smooth' });
@@ -153,19 +146,5 @@ export default {
     .socials {
       width: 20%;
     }
-  }
-  .logo_box {
-    display: flex;
-    align-items: center;
-    color: $color--text1;
-    font-weight: 600;
-  }
-  .logo_highlighted {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: .5em;
-    padding-left: 1.5em;
-    background-color: rgba(0, 255, 255, .2);
-    margin-right: .2em;
   }
 </style>
