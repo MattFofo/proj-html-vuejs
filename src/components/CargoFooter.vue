@@ -201,5 +201,7 @@ export default {
     padding-top: $height--header;
     padding-bottom: $height--header;
     color: #BCBDBD;
+    max-width: 1980px;
+    margin: auto;
   }
 </style>

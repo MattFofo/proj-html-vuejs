@@ -36,6 +36,8 @@ export default {
   @import '../assets/styles/partials/utility.scss';
 
   section {
+    max-width: 1980px;
+    margin: auto;
     color: $color--text1;
     position: relative;
     top: ($height--header) * -1;

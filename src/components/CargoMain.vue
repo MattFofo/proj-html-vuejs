@@ -2,13 +2,6 @@
 <!-- parte principale pagina con dentro le sezioni.
 Conterrà anche i dati per creare i due tipi principali di sezioni dinamicamente e le cards-->
   <main>
-    <!-- prima sezione in alto -->
-    <!-- sezione tipo 1 -->
-    <!-- sezione tipo 2 -->
-    <!-- sezione tipo da definire -->
-    <!-- sezione tipo da definire -->
-    <!-- sezione tipo 2 -->
-    <!-- sezione tipo 1 -->
     <SectionTop />
     <SectionType1 />
     <SectionType2 :section-version-from-main="'V1'" :card-type-from-main="'type1'" />

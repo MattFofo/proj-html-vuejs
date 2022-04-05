@@ -156,6 +156,8 @@ export default {
   section {
     padding-top: $height--header;
     padding-bottom: $height--header;
+    max-width: 1980px;
+    margin: auto;
     .btn_box {
       display: flex;
       justify-content: flex-end;

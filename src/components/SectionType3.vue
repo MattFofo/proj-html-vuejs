@@ -53,6 +53,8 @@ export default {
   section {
     padding-top: $height--header;
     padding-bottom: $height--header;
+    max-width: 1980px;
+    margin: auto;
     .row_cards {
       bottom: calc(calc($height--card-icon-box / 2) - calc($height--line-break / 2));
     }
@@ -62,6 +64,8 @@ export default {
       position: absolute;
       left: 0;
       right: 0;
+      max-width: 1980px;
+      margin: auto;
     }
     .card {
     text-align: center;

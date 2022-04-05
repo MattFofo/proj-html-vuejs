@@ -6,34 +6,14 @@
           <small>pretitolo</small>
           <h1>TITOLO TITOLO</h1>
         </div>
-        <!-- <div class="col">
-          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laborum magni nihil tempore dolorem culpa rem veritatis.
-          </p>
-        </div> -->
-        <!-- <div class="btn_box col-5">
-          <button class="btn btn-outline-primary">SEE ALL</button>
-        </div> -->
-        <!-- inserire blocco cards al posto dei bottoni -->
-        <!-- <div class="col-8">
-          <button class="btn btn-primary">GET IN TOUCH</button>
-          <button class="btn btn-outline-primary">READ MORE</button>
-        </div> -->
       </div>
-      <!-- <div class="line_break"></div> -->
-      <!-- cards -->
       <div class="row row_cards position-relative">
-        <!-- <div v-for="i in 3" :key="i" class="col">
-          <CargoCard />
-        </div> -->
         <div v-for="i in 4" :key="i" class="col">
           <div class="card position-relative text-center">
             <div class="icon_box m-auto">
               <h3>234</h3>
             </div>
             <h4 class="py-3">titolo titolo</h4>
-            <!-- <p class="">Lorem ipsum dolor sit amet tra tralaal consectetur.</p> -->
-            <!-- <font-awesome-icon icon="fa-solid fa-arrow-right" /> -->
           </div>
         </div>
       </div>
@@ -56,6 +36,8 @@ export default {
     background-position: center;
     padding-top: $height--header;
     padding-bottom: $height--header;
+    max-width: 1980px;
+    margin: auto;
   }
   .card {
     border: none;

@@ -11,10 +11,11 @@
   background-color: rgba(22, 146, 142, .2);
   color: $primaryDark;
   padding-top: .125rem;
-  padding-bottom: .125rem;
+  padding-bottom: .25rem;
   padding-left: .5rem;
   padding-right: .5rem;
   font-weight: 800;
+  border-radius: 4px;
 }
 
 .bg_none {
@@ -29,6 +30,8 @@ p {
   font-size: 1.2rem;
   color: $primary;
   font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: inline-block;
 }
 
 h2 {
@@ -50,3 +53,10 @@ h2 {
   background-color: rgba(0, 255, 255, .2);
   margin-right: .2em;
 }
+
+.section, header {
+  max-width: 1980px;
+  margin: auto;
+}
+
+
