@@ -142,9 +142,35 @@ export default {
     a {
       text-decoration: none;
       color: $color--text2;
+      position: relative;
     }
     .socials {
       width: 20%;
+    }
+
+    //hover links
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      margin-bottom: 1rem;
+      background: currentColor;
+      visibility: hidden;
+      transition: all .1s ease-in;
+      transform: scaleX(.2);
+      transform-origin: right;
+    }
+    li:hover a::after{
+      visibility: visible;
+      transform-origin: left;
+    }
+    li:active a::after{
+      transform: scaleX(1);
+      transform-origin: right;
+
     }
   }
 </style>

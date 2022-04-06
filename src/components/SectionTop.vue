@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="col-8">
-          <button class="btn btn-primary me-4">GET IN TOUCH</button>
+          <button @click="scroll" class="btn btn-primary me-4">GET IN TOUCH</button>
           <button class="btn btn-outline-primary">READ MORE</button>
         </div>
       </div>
@@ -27,6 +27,12 @@ export default {
   name: 'SectionTop',
   props: {
     sectionsData: Array,
+  },
+  methods: {
+    scroll() {
+      const element = document.getElementById('sectionForm');
+      element.scrollIntoView({ behavior: 'smooth' });
+    },
   },
 };
 </script>

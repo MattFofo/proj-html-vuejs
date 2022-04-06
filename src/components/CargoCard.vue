@@ -1,4 +1,4 @@
-<!-- card dinamiche per sezione 'main services' 'trusted feedback' e footer  -->
+<!-- card dinamiche per sezione 'main services' 'trusted feedback'  -->
 <template>
   <div class="card position-relative ">
     <div v-if="CardTypeFromMain == 'type1'"

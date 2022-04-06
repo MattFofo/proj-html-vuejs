@@ -140,14 +140,6 @@ export default {
   methods: {
     formSubmit() {
       this.formControl();
-      // this.arrFormData.push(this.objFormSubmit);
-      // this.objFormSubmit = {
-      //   name: '',
-      //   email: '',
-      //   phone: '',
-      //   moreInfo: 'More Info',
-      //   message: '',
-      // };
     },
     formControl() {
       // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -170,7 +162,6 @@ export default {
                 moreInfo: 'More Info',
                 message: '',
               };
-              // form.classList.remove('was-validated, is-invalid');
               this.formSubmitted = true;
             }
             form.classList.add('was-validated');
